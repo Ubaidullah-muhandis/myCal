@@ -1,0 +1,120 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700&display=swap'); */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: linear-gradient(45deg, #ff0023, #fff34f);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 400px;
+    height: 85vh;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.entering {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    flex-direction: column;
+    border: 5px dashed #00f;
+    margin: 15px auto;
+    
+}
+#input {
+    width: 90%;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: 1px solid #fff;
+    box-shadow: -1px -1px 1px #00f,
+                1px 1px 1px #00f; 
+    text-align: right;  
+    font-size: 25px; 
+    outline: none;         
+}
+.entering h1 {
+    align-self: flex-end;
+    padding-bottom: 30px;
+}
+
+.character {
+    flex: 3;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    "ac ac del minus"
+    "seven eight nine times"
+    "four five six plus"
+    "one two three div"
+    "point zero equal equal";
+    
+}
+.clear {
+    grid-area: ac;
+}
+.del {
+    grid-area: del;
+}
+.nine {
+    grid-area: nine;
+}
+.eight {
+    grid-area: eight;
+}
+.seven {
+    grid-area: seven;
+}
+.six {
+    grid-area: six;
+}
+.five {
+    grid-area: five;
+}
+.four {
+    grid-area: four;
+}
+.three {
+    grid-area: three;
+}
+.two {
+    grid-area: two;
+}
+.one {
+    grid-area: one;
+}
+.zero {
+    grid-area: zero;
+}
+.times {
+    grid-area: times;
+}
+.plus {
+    grid-area: plus;
+}
+.minus {
+    grid-area: minus;
+}
+.div {
+    grid-area: div;
+}
+.equal {
+    grid-area: equal;
+}
+
+button {
+    background: #00f;
+    color: #fff;
+    font-size: 1.5em;
+    border: 1px solid #fff;
+}
